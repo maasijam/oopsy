@@ -1,0 +1,121 @@
+{
+  "name": "saul",
+  "som": "seed",
+  "defines": {},
+  "parents": {
+    "pot_mux": {
+      "component": "CD4051",
+      "mux_count": 8,
+      "pin": {
+        "adc": 15,
+        "sel0": 7,
+        "sel1": 8,
+        "sel2": 9
+      }
+    }
+  },
+  "components": {
+    "sw1": {
+      "component": "Switch",
+      "pin": 25
+    },
+    "sw2": {
+      "component": "Switch",
+      "pin": 10
+    },
+	"sw3": {
+      "component": "Switch",
+      "pin": 23
+    },
+	"sw4": {
+      "component": "Switch",
+      "pin": 24
+    },
+	"sw5": {
+      "component": "Switch",
+      "pin": 29
+    },
+	"sw6": {
+      "component": "Switch",
+      "pin": 30
+    },
+	"sw_tap": {
+      "component": "Switch",
+      "pin": 22
+    },
+    "knob1": {
+      "component": "CD4051AnalogControl",
+      "index": 0,
+      "parent": "pot_mux"
+    },
+    "knob2": {
+      "component": "CD4051AnalogControl",
+      "index": 1,
+      "parent": "pot_mux"
+    },
+    "knob3": {
+      "component": "CD4051AnalogControl",
+      "index": 2,
+      "parent": "pot_mux"
+    },
+    "knob4": {
+      "component": "CD4051AnalogControl",
+      "index": 3,
+      "parent": "pot_mux"
+    },
+    "knob5": {
+      "component": "CD4051AnalogControl",
+      "index": 4,
+      "parent": "pot_mux"
+    },
+    "knob6": {
+      "component": "CD4051AnalogControl",
+      "index": 5,
+      "parent": "pot_mux"
+    },
+    "knob7": {
+      "component": "CD4051AnalogControl",
+      "index": 6,
+      "parent": "pot_mux"
+    },
+    "knob8": {
+      "component": "CD4051AnalogControl",
+      "index": 7,
+      "parent": "pot_mux"
+    },
+    "gatein": {
+      "component": "GateIn",
+      "pin": 0
+    },
+	"sw3_1": {
+			"component": "Switch3",
+			"pin": {"a":18, "b":19 }
+		},
+	"sw3_2": {
+		"component": "Switch3",
+		"pin": {"a":20, "b":21 }
+	}
+  },
+  "aliases": {
+    "gate": "gatein",
+    "gate1": "gatein",
+    "switch": "sw1",
+    "button": "sw_tap",
+    "switch1": "sw1",
+    "button1": "sw1",
+	"tap": "sw_tap",
+    "switch2": "sw2",
+    "button2": "sw2",
+    "knob": "knob1",
+    "ctrl": "knob1",
+    "ctrl1": "knob1",
+    "ctrl2": "knob2",
+    "ctrl3": "knob3",
+    "ctrl4": "knob4",
+    "ctrl5": "knob5",
+    "ctrl6": "knob6",
+    "ctrl7": "knob7",
+    "ctrl8": "knob8",
+    "led": "led1"
+  }
+}
